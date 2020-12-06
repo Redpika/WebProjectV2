@@ -1,0 +1,246 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font: 14px arial;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#navbar {
+    background: linear-gradient(rgb(112, 186, 240), rgb(101, 91, 214));
+    transition: 0.4s;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+#navbar a {
+    float: left;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 17px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#logo-img {
+    float:left;
+}
+
+#navbar #logo-img {
+    transition: 0.4s;
+}
+
+#navbar a:not(#navbar-logo):hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar-right {
+    float: right;
+    padding-right: 20px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 13px;
+    background-color: inherit;
+    border-radius: 4px;
+    font-family: Roboto; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+  
+.dropdown-content a {
+    float: left;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important;
+    }
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #navbar-right {
+        float: none;
+    }
+}
+
+.main {
+    padding-top: 10%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#bird {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+
+.footer {
+    background: linear-gradient(rgb(112, 186, 240), rgb(101, 91, 214));
+    display: block;
+    bottom: -10px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+    margin: 0px -10px -10px -10px;
+}
+
+#logo-img-white {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#about-link:hover {
+    background: linear-gradient(rgb(112, 186, 240), rgb(101, 91, 214));
+    border-radius: 10px;
+}
+
+figure {
+    display: inline-block;
+    width: 30%;
+}
+
+#informatics:hover {
+    background-color: chocolate;
+    border-radius: 4px;
+    color: aliceblue;
+    transition: all 0.3s ease;
+}
+
+#si:hover {
+    background-color: cadetblue;
+    border-radius: 4px;
+    color: aliceblue;
+    transition: all 0.3s ease;
+}
+
+#inf-logo, #si-logo {
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#text-box {
+    padding: 30px;
+    background-color: bisque;
+    text-align: left;
+}
+
+#content {
+    display: flex; 
+}
+  
+#content img {
+    display: block;
+    width: 20%;
+}
+
+#bird-1 img {
+    padding-right: 15px;
+}
+  
+#bird-2 img {
+    padding-left: 15px;
+}
+
+#content h2 {
+    margin: 0;
+}
+
+#content p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: justify;
+}
